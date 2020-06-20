@@ -1,0 +1,405 @@
+<html>
+    <head>
+        <title>Chapter 31-34</title>
+
+
+        <script>
+
+
+// Task #1
+
+var d = new Date();
+
+document.write(d);
+
+
+
+
+// Task #2
+
+var da = new Date();
+
+var da1 = da.getMonth();
+
+
+switch(da1){
+    case 0 :
+    document.write("Current Month : january");
+    break;
+    case 1 :
+    document.write("Current Month : February");
+    break;
+    case 2 :
+    document.write("Current Month : March");
+    break;
+    case 3 :
+    document.write("Current Month : April");
+    break;
+    case 4 :
+    document.write("Current Month : May");
+    break;
+    case 5 :
+    document.write("Current Month : June");
+    break;
+    case 6 :
+    document.write("Current Month : July");
+    break;
+    case 7 :
+    document.write("Current Month : August");
+    break;
+    case 8 :
+    document.write("Current Month : September");
+    break;
+    case 9 :
+    document.write("Current Month : October");
+    break;
+    case 10 :
+    document.write("Current Month : November");
+    break;
+    case 11 :
+    document.write("Current Month : December");
+    break;
+}
+
+
+// Task #3
+
+var day = new Date();
+
+var day1 = day.getDay();
+
+switch(day1){
+ case 0 :
+document.write("Today is Sun");
+break;
+case 1 :
+document.write("Today is Mon");
+break;
+case 2 :
+document.write("Today is Tue");
+break;
+case 3 :
+document.write("Today is Wed");
+break;
+case 4 :
+document.write("Today is Thu");
+break;
+case 5 :
+document.write("Today is Fri");
+break;
+case 6:
+document.write("Today is Sat");
+break;
+}
+
+
+
+// Task #4
+
+
+var day2 = new Date();
+
+var day3= day2.getDay();
+
+
+switch(day1){
+ case 0 :
+document.write("It's Fun Day");
+break;
+case 1 :
+document.write("Today is Mon");
+break;
+case 2 :
+document.write("Today is Tue");
+break;
+case 3 :
+document.write("Today is Wed");
+break;
+case 4 :
+document.write("Today is Thu");
+break;
+case 5 :
+document.write("Today is Fri");
+break;
+case 6:
+document.write("It's Fun Day");
+break;
+}
+
+
+
+
+
+// Task #5
+
+var day4 = new Date();
+
+var day4i = day4.getDay();
+
+if(day4i < 16)
+{
+    document.write("First fiteen days of the month");
+}
+
+else {
+    document.write("Last fiteen days of the month"); 
+}
+
+
+
+
+// Task #6
+
+var day5 = new Date();
+
+var day5i =day5.getTime();
+
+var day50 = day5.getMinutes();
+
+document.write("Current Date: " + day5 + "<br/>" +"Elapsed milliseconds sunce January 1, 1970: " + day5i + "<br/>" + "Elapsed minutes since January 1, 1970: " + day50 );
+
+
+
+
+// Task #7
+
+var day7 = new Date();
+
+var day7i = day7.getHours();
+
+if(day7i > 12 ){
+    alert("Its AM");
+
+}
+else{
+    alert("Its PM");
+}
+
+
+
+
+// Task #8
+
+var laterDate = new Date("May 31, 2020");
+
+document.write("Later Date: " + laterDate);
+
+
+
+
+// Task #9
+
+var ramadan = new Date("Apr 24,2020");
+
+var rmili = ramadan.getTime();
+
+var r3 = new Date();
+
+var r3mili = r3.getTime();
+
+var diff = r3mili - rmili;
+
+var cal = Math.floor(diff / (1000*60*60*24))
+
+document.write(cal + " days have passed since 1st Ramadan,2020");
+
+
+
+
+
+// Task # 10
+
+
+var dd = new Date("Jan 01, 2020");
+
+var dd1 =dd.getTime();
+
+
+var cc = new Date();
+
+var cc1 = cc.getTime();
+
+var diff1 = cc1 - dd1;
+
+var calcul = Math.floor(diff1 / (1000*60))
+
+
+document.write("On reference date " + dd + "<br/>" + calcul + " seconds have passed since beginning of 2020");
+
+
+
+
+
+// Task #11
+
+
+
+var tkkk = new Date();
+
+var tk11 = new Date();
+
+tk11. setHours(20);
+
+document.write("Current Date: " + tkkk + "<br/>" + "1 hour ago, it was " + tk11);
+
+
+
+
+
+// Task #12 
+
+
+
+ var tk12 = new Date();
+
+var tk112 = new Date();
+
+tk112. setFullYear(2020-100);
+
+document.write("Current Date: " + tk12 + "<br/>" + "100 Years back, it was " + tk112);
+
+ 
+
+
+
+
+
+// Task #13
+
+
+var dob = new Date( prompt("Please enter your DOB to so I will tell you your age " , "Jun 2,1995" ))
+
+var dobmili = dob.getTime();
+
+var cdate = new Date();
+
+var cdatemili = cdate.getTime();
+
+var difference = cdatemili - dobmili;
+
+var calculations = Math.floor(difference / (1000*60*60*24*30*12));
+
+var year1 = dob.getFullYear();
+
+document.write("Your age is: " + calculations + "<br/>" + "Your birth year is: " + year1 );
+
+
+
+
+
+
+
+
+// Task #14
+
+var bill = prompt("Enter your name is will show you your Electricity bill");
+
+var currentMonth = new Date();
+
+var day11 = currentMonth.getMonth();
+
+document.write("Customer Name: "+bill +"<br/>");
+
+switch(day11){
+    case 0 :
+    document.write("Month : january");
+    break;
+    case 1 :
+    document.write("Month : February");
+    break;
+    case 2 :
+    document.write("Month : March");
+    break;
+    case 3 :
+    document.write("Month : April");
+    break;
+    case 4 :
+    document.write("Month : May");
+    break;
+    case 5 :
+    document.write("Month : June");
+    break;
+    case 6 :
+    document.write("Month : July");
+    break;
+    case 7 :
+    document.write("Month : August");
+    break;
+    case 8 :
+    document.write("Month : September");
+    break;
+    case 9 :
+    document.write("Month : October");
+    break;
+    case 10 :
+    document.write("Month : November");
+    break;
+    case 11 :
+    document.write("Month : December");
+    break;
+}
+
+var nunits = 410;
+
+var cunits = 16;
+
+var ampayable = nunits * cunits ;
+
+var lateFee = 350;
+
+var grossAmount = ampayable + lateFee ;
+
+
+
+
+
+
+document.write("<br/>" + day11 + "<br/>" + "Number of Units: " + nunits + "<br/>" + "Charges per unit: " + cunits + "<br/>" + "<br/>" + "Net Amount Payabale(within Due Date): " + ampayable + "<br/>" + "Late payment surcharge: " + lateFee + "Gross Amount Payable (after Due date): " + grossAmount );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+
+    </head>
+    <body>
+
+    </body>
+</html>

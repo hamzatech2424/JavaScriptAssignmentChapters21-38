@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chapter 21-25</title>
+<script>
+	
+
+
+//Task #1
+
+var a = prompt("Enter First Name; ");
+
+var b = prompt("Enter Last Name");
+
+var fullName = a + b;
+
+
+document.write(fullName);
+
+
+
+//Task #2
+
+
+var mobileName = prompt("Enter My favourite phone");
+
+var str = mobileName.length;
+
+document.write("My Favourite phoe is: " + "<b/>" + mobileName + "</b>" + "<br/>" + "Length of a string: " + str);
+
+
+
+// Task #3
+
+
+var str1 = prompt("Please enter a string");
+
+document.write("String: " + str1 + "<br/>");
+
+switch("n"){
+	case "P" :
+	document.write("index no 'n': " + 0);
+	break;
+
+case "a" :
+	document.write("index no 'n': " + 1);
+	break;
+
+case "k" :
+	document.write("index no 'n': " + 2);
+	break;
+
+case "i" :
+	document.write("index no 'n': " + 3);
+	break;
+
+case "s" :
+	document.write("index no: " + 4);
+	break;			
+
+case "t" :
+	document.write("index no 'n': " + 5);
+	break;			
+
+case "a" :
+	document.write("index no 'n': " + 6);
+	break;			
+
+case "n" :
+	document.write("index no 'n': " + 7);
+	break;			
+
+case "i" :
+	document.write("index no 'n': " + 8);
+	break;			
+
+}
+
+
+
+
+
+
+//Task #4
+
+var str2 = prompt("Please enter a string");
+
+
+var name = str2.lastIndexOf("l");
+
+document.write("String: " + str2 + "<br/>" );
+
+document.write("last index of 'I': " + name);
+
+
+
+
+
+//Task #5
+
+var str3 = prompt("Please enter a string");
+
+var ind = str3[3];
+
+document.write("String: " + str3 + "<br/>" + "Chararcter at index 3: " + ind );
+
+
+
+
+
+
+//Task #6
+
+
+var fname = prompt("Write your first name");
+
+var lname = prompt("Write last name");
+
+var fullName2 = fname.concat(lname);
+
+document.write(fullName2);
+
+
+
+
+
+
+
+
+// Task #7
+
+var word = "Hyderabad";
+
+var first4 = word.slice(5);
+
+var word2 = "Islam";
+
+document.write("City: " + word + "<br/>" + "After replacement: " + word2+first4 );
+
+
+
+
+
+// TAsk #8
+
+var message = "Ali and Sami are best riends. They play cricket and football together";
+
+var newMessage = message.replace(/and/g , "&");
+
+document.write(newMessage);
+
+
+
+
+// Task #9
+
+var val = "472";
+
+ var num = Number(val);
+
+document.write("Value: " + val + "<br/>" + "Type: " + typeof(val) + "<br/>" + "Value: " + num + "<br/>" + "Type:" + typeof(num) );
+
+
+
+
+// Task #10
+
+var uin = prompt("Enter a string to convert it into Upper Case");
+
+var unio = uin.toUpperCase();
+
+document.write("User input: " + uin + "<br/>" + "Upper case: " + unio );
+
+
+
+
+
+// Task #11
+
+var jam = prompt("Please enter a string to convert it into Lower Case");
+
+var jam1 = jam[0].toUpperCase();
+
+var jam2 = jam.slice(1);
+
+var jam3 = jam2.toLowerCase();
+
+var titleCase = jam1 + jam3;
+
+document.write("User input: " + jam + "<br/>" + "Title case: " + titleCase );
+
+
+
+
+// Task #12
+
+var ab = 35.56;
+
+var abc = ab.toString();
+
+ 
+
+document.write("Number: " + ab + "<br/>" + "Result: " + abc );
+
+
+
+
+
+
+
+// Task #13
+
+var userName = prompt("Please Enter a Username");
+
+var stlen = userName.length;
+
+
+for(var i = 0 ; i < stlen ; i++){
+
+if(userName[i] == "@" || userName[i] == "!" || userName[i] == "," || userName[i] == "." ){
+	alert("enter valid usernmae");
+	break;
+
+}
+
+else{
+	alert(userName);
+}
+
+
+}
+
+
+
+// //Task #14
+
+var bak = ["cake","applepie","cookie","chips","patties"];
+
+var ser = prompt("Welcome to ABC Bakery. What do you want to order sir/ma'am?");
+
+var low = ser.toLowerCase();
+
+
+if(low === "cake"){
+	alert(low + " is avaialble at index 0 in our bakery")
+}
+
+else if(low === "applepie"){
+	alert(low + " is avaialble at index 1 in our bakery")
+}
+
+else if(low === "cookie"){
+	alert(low + " is avaialble at index 2 in our bakery")
+}
+
+else if(low === "chips"){
+	alert(low + " is avaialble at index 3 in our bakery")
+}
+
+else if(low === "patties"){
+	alert(low + " is avaialble at index 4 in our bakery")
+}
+
+
+else{
+	alert("We are sorry. " + low + " is not available in our bakery" );
+}
+
+
+
+// Task #15
+
+var pass = prompt("Please enter a password");
+
+var stringlen = pass.length;
+
+
+document.write("Entered Password: " + pass + "<br/>")
+
+if (pass[0] == "0" || pass[0] == "1" || pass[0] == "2" || pass[0] == "3" || pass[0] == "4" || pass[0] == "5" || pass[0] == "6" || pass[0] == "7" || pass[0] == "8" || pass[0] == "9") 
+{
+
+document.write("Password can not begin with a number");
+
+
+}
+
+else if(stringlen <= 6){
+
+document.write("Pasword is Short. Must be 6 characters long.");	
+}
+
+else if(pass =! /^[0-9a-zA-Z]+$/){
+
+document.write("you must contain letters and numbers");	
+}
+
+else{
+
+	document.write("your password is too long. Only Six digits are acceptable");
+}
+
+
+
+
+
+
+
+
+
+// Task #16
+
+
+var university = "University of Faisalabad";
+
+var unilen = university.length;
+
+for( var j = 0 ; j < unilen ; j++)
+{
+
+document.write(university[j] + "<br/>");
+
+
+}
+
+
+
+
+// Task #17
+
+var pak = "Pakistan";
+
+var pak1 = pak.charAt(7);
+
+document.write("User input: " + pak + "<br/>" + "Last Character of input: " + pak1 );
+
+
+
+// //Task #18
+
+// var text = "the quick brown fox jumps over the lazy dog";
+
+// var txtlen = text.length;
+
+//  var serc = text.slice(1,3);
+
+// var wd = text.indexOf("he");
+
+// for( var k = 0; k < txtlen; k++ ){
+
+//  if(serc === text[k]){
+// 	 alert("is is available");
+// 	 break;
+//  }
+//  else{
+// 	 alert("it is not available");
+//  }
+
+
+
+// }
+
+// document.write(wd);
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

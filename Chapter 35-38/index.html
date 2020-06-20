@@ -1,0 +1,466 @@
+<html>
+<head>
+<title>Chapter 35-38 </title>
+
+<script>
+
+
+
+// Task#1
+
+function date(){
+    var a = new Date();
+    alert(a);
+}
+
+
+date();
+
+
+
+// Task #2
+
+function name(fname, lname){
+  var  c = fname+lname;
+alert(c)
+
+}
+
+name("Hamza","Shafiq");
+
+
+
+
+// Task #3
+ 
+function add(d,d1){
+    e = d+d1;
+    return e;
+}    
+
+var d = prompt("Enter your first number");
+
+var d1 = prompt("Enter your second number");
+
+f = add(d,d1);
+alert(f);
+
+
+
+
+
+
+// Taskk #4
+
+
+function calcu(num1,sign,num2){
+
+if(sign == "+"){
+    return num1+num2;
+}
+
+else if(sign == "-"){
+    return num1-num2;
+}
+
+else if(sign == "*"){
+    return num1*num2;
+}
+
+else if(sign == "/"){
+    return num1/num2;
+}
+
+
+}
+
+
+var a1= prompt("Enter first number");
+
+var a2= prompt("Enter your sign");
+
+var a3 = prompt("Enter second number");
+
+var ca = calcu(a1,a2,a3);
+
+alert(ca);
+
+
+
+
+
+
+//Task #5
+
+function square(nu){
+    return nu * nu;
+}
+
+var nu1 = square(2);
+
+alert(nu1);
+
+
+
+
+
+// Task #6
+
+
+ function counting(z1,z2){
+
+ for(var i = z1; i <= z2 ; i++ ){
+  document.write(i + "<br/>");
+    
+ }
+
+
+ }
+
+  var z1= +prompt("Enter a number from where counting starts");
+
+  var z2= +prompt("Enter endinng number of counting");
+
+
+  var z3 = counting(z1,z2);
+
+
+
+
+
+// Task #8
+
+
+
+
+function square (x1,x2){
+ 
+x4 = x1*x1;
+x5 = x2*x2;
+
+}
+
+function hypo(x1,x2){
+    square(x1,x2)
+    var x6 = x4 + x5;
+    document.write("Hypotaneous: " + x6);
+}
+
+
+
+var x1 = prompt("Enter Base: ");
+
+var x2 = prompt("Enter Perpendicular: ");
+
+var zz = hypo (x1,x2);
+
+// or Second Way of Task #8
+
+ 
+ function hypo(x1,x2){
+      function square(x1,x2){
+        x4 = x1*x1;
+        x5 = x2*x2;
+      }
+      square(x1,x2);
+     var x6 = x4 + x5;
+     document.write("Hypotaneous: " + x6);
+ }
+ 
+ 
+ 
+ var x1 = prompt("Enter Base: ");
+ 
+ var x2 = prompt("Enter Perpendicular: ");
+ 
+ var zz = hypo (x1,x2);
+ 
+ 
+ 
+ 
+
+
+// Task #9
+
+function area(wd,hei) {
+var ar = wd*hei;
+return ar;
+
+}
+
+var wd = prompt("Enter width of rectangle");
+
+var hei = prompt("Enter Height of rectangle");
+
+var are = area(wd,hei);
+
+document.write("Area of rectangle is " + are);
+
+
+
+
+
+// Task #11
+
+
+function caps(str1){
+str2 = str1[0].toUpperCase();
+return str2;
+}
+
+
+function copy(str1){
+     str3 = str1.slice(1);
+}
+
+
+var str1 = prompt("Enter any sencentence");
+
+var str3 = "";
+
+caps(str1);
+copy(str1);
+
+document.write(str2 + str3);
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Task #10
+
+
+
+var str1 = prompt("Enter sring to check for palindrome");
+var str2 = "";
+
+var len = str1.length;
+
+for(var i= len-1; i >= 0; i--)
+{
+    str2 += str1[i]; ////str2 = str2 + str1[i]; rkhnay k liye string 2 mae;
+}
+
+if(str1 == str2)
+{
+    document.write("It is Palindrome");
+}
+
+else{
+    document.write("It is not palindrome");
+}
+
+
+
+
+
+function reverse(stpal){
+ for(var i= len-1; i >= 0; i--)
+{
+     stpal2 += stpal[i]; ////str2 = str2 + str1[i]; rkhnay k liye string 2 mae;
+     }
+
+
+
+if(stpal == stpal2)
+{
+    document.write("It is Palindrome");
+}
+
+else{
+    document.write("It is not palindrome");
+}
+
+
+}
+
+
+
+var stpal = prompt("Enter sring to check for palindrome");
+
+var stpal2 = "";
+
+var len = stpal.length;
+
+
+reverse(stpal);
+
+
+
+
+
+
+
+
+// Task #12
+
+var string1 = "Web Development Tutorial";
+var string2 = string1.slice(0,3);
+var string3 = string1.slice(4,15);
+var string4 = string1.slice(16);
+// // for(var j = 0; j<= leng-1; j++){
+
+////     string2 += string1[j]; 
+////     if(string1[j] == " "){
+////     break;
+   
+// //     }
+
+//// }
+
+function compare(string1){
+
+if(string2 < string3 ){
+  document.write(string2);
+}
+
+else{
+  document.write(string3)
+}
+
+}
+
+
+
+compare(string1);
+
+
+
+
+
+
+
+
+
+  
+
+//Task #13
+
+
+var cm = "JSResourceS.com";
+
+var stl = cm.length;
+
+var cm1 = "S";
+
+var cm2= [];
+
+
+
+function find(cm,cm1){
+
+for(var i=0; i<=stl-1; i++){
+
+
+if(cm[i] == cm1 ){
+
+cm2 += cm1;
+
+
+}
+
+}
+
+}
+
+find(cm,cm1);
+document.write("1. " + cm2[0] + "<br/>");
+
+
+document.write("2. " +cm2[1] + "<br/>");
+
+document.write("3. " +cm2[2] + "<br/>");
+
+
+
+
+
+
+// Task #14
+
+
+var radius = prompt("Enter a radius to calculate");
+
+function circumference (radius){
+
+return (2*(3.142*radius));
+
+}
+
+
+function areac(radius){
+return 3.142*(radius*radius);
+
+}
+
+
+var cir = circumference(radius);
+
+var are = areac(radius);
+
+document.write("Circumference: " +cir + "<br/>");
+
+document.write("Area of a circle : " +are);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
